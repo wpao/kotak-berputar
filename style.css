@@ -1,0 +1,37 @@
+body
+{
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    perspective: 600px;
+}
+.tidur
+{
+    background-image: linear-gradient(rgb(243, 117, 117), rgb(120, 120, 233));
+    width: 400px;
+    height: 400px;
+    transform: rotateX(70deg) rotateZ(50deg);
+    transform-style: preserve-3d;
+}
+.berdiri
+{
+    background-image: linear-gradient(rgb(219, 133, 239), rgb(223, 210, 168));
+    width: 400px;
+    height: 400px;
+    transform: rotateX(90deg);
+    animation: berputar 3s infinite linear;
+    transform-style: preserve-3d;
+}
+.putar
+{
+    background-color: rgb(141, 186, 53);
+    width: 400px;
+    height: 400px;
+    transform: rotateX(90deg);
+    animation: berputar 40s infinite linear;
+}
+@keyframes berputar {
+    0% {transform: rotateX(0deg);}                
+    100% {transform: rotateX(360deg);}
+}
